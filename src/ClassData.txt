@@ -1,0 +1,107 @@
+import React, { useEffect, useRef, useState } from "react";
+
+import logo from "./logo.svg";
+
+import "./App.css";
+
+
+
+// 1. mounting
+
+// 2. updating
+
+// 3. unmounting
+
+// useEffect hooks
+
+
+
+function App() {
+
+  let fname = "Pranjal";
+
+  let lname = "Singh";
+
+  const [name, setName] = useState("Mohit Prakash");
+
+  const [count, setCount] = useState(0);
+
+  const nameRef = useRef(null);
+
+
+
+  const onChangeNameClick = () => {
+
+    fname = "Manjay";
+
+    console.log("fname", fname);
+  
+    setName("Pranjal Singh");
+
+    alert(nameRef.current.value);
+
+    // nameRef.current === document.getElementById("name")
+
+  };
+
+
+
+  useEffect(() => {
+
+    // mounting and updating
+
+    if (count < 1) {
+
+      setTimeout(() => {
+
+        setCount(count + 5);
+
+      }, 1);
+
+    }
+
+
+
+    //unmounting
+
+    return () => {
+
+      console.log("unmounting");
+
+    };
+
+  }, [count]);
+
+  return (
+
+    <div className="App">
+
+      <input type="text" placeholder="Enter Name" ref={nameRef} />
+
+      <div>
+
+        <button onClick={onChangeNameClick}>Change Fname</button>
+
+      </div>
+
+      Fname:- {fname}
+
+      <br></br>
+
+      Lname:- {lname}
+
+      <br></br>
+
+      State Name :- {name}
+
+      <h1>{count}</h1>
+
+    </div>
+
+  );
+
+}
+
+
+
+export default App;
