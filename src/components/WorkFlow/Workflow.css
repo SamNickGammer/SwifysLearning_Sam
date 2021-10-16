@@ -1,0 +1,307 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+  margin: 0;
+}
+button {
+  cursor: pointer;
+}
+/* ------------------------------------------------ */
+.p-6 {
+  padding: 1.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+
+/* --------------------------------------------------- */
+.navPrimaryMain {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 4rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+a {
+  text-decoration: inherit;
+}
+.leftNevFlex {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 1 0%;
+}
+.rightNevFlex {
+  padding-right: 0;
+  margin-left: 1.5rem;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  position: static;
+  align-items: center;
+  display: flex;
+}
+.imageLogo {
+  width: 9rem;
+}
+#logoImage {
+  margin-top: 13%;
+}
+.pricAccount {
+  display: flex;
+  margin-left: 1.5rem;
+}
+.nevLink {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  align-items: center;
+  display: inline-flex;
+  border-bottom-width: 2px;
+  border-color: transparent;
+}
+.borderDown {
+  border-color: rgba(99, 102, 241, 1);
+}
+.nevLink:hover {
+  color: rgba(55, 65, 81, 1);
+  border-color: rgba(209, 213, 219, 1);
+}
+/* ----------------------------------------------------------- */
+.secondSection {
+  padding: 6rem 2rem 6rem 2rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flexPlan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricingPlan {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3.75rem;
+  line-height: 1;
+  margin: 0;
+  color: rgb(31, 41, 55);
+}
+.subTitle {
+  text-align: center;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+  color: gray;
+}
+.bilingChange {
+  display: flex;
+  margin-top: 2rem;
+  padding: 0.125rem;
+  border-radius: 0.5rem;
+  align-self: center;
+  position: relative;
+  background-color: rgb(243, 244, 246);
+}
+.billingBtn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: auto;
+  font-weight: 550;
+  font-size: 0.82rem;
+  line-height: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  color: rgba(55, 65, 81, 1);
+}
+.tranparency {
+  background-color: transparent;
+}
+.bg-white {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+/* ------------------------------------------------------------- */
+
+.cardFlx {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: none;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+@media (max-width: 992px) {
+  .cardFlx {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 662px) {
+  .cardFlx {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.maincardBorder {
+  border-width: 1px;
+  border-radius: 0.5rem;
+  border-color: rgba(229, 231, 235, 1);
+}
+.cardNameHed {
+  line-height: 1.5rem;
+
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.pricingMainMonth {
+  font-weight: 800;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.perMonth {
+  color: rgba(107, 114, 128, 1);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.aBtnCard {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(17, 24, 39, 1);
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(0, 0, 0, 1);
+  border-width: 1px;
+  border-radius: 0.375rem;
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+.aBtnCard:disabled {
+  background-color: rgb(95, 96, 97);
+  border-color: rgb(95, 96, 97);
+  cursor: default;
+}
+.cardDesc {
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  border-top-width: 1px;
+  border-color: rgba(229, 231, 235, 1);
+}
+.nameDescCard {
+  color: rgba(17, 24, 39, 1);
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.listNameDescCard {
+  margin-top: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+.flexList {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.svgImgaeTick {
+  /* margin-top: 5px; */
+
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.textDetailsList {
+  margin-right: 0;
+  margin-left: 0.75rem;
+  color: rgba(107, 114, 128, 1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+/* ------------------------------------------------- */
+.footerStart {
+  padding: 3rem 2rem 3rem 2rem;
+}
+.navFooterMain {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -0.5rem -1.25rem -0.5rem -1.25rem;
+}
+.footerNevItem {
+  padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+}
+.linkFooterNevItem {
+  color: rgba(107, 114, 128, 1);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+.linkFooterNevItem:hover {
+  color: rgb(0, 0, 0);
+}
+.logoGithub {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: block;
+  cursor: pointer;
+}
+.githubItem {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.pfooterItem {
+  color: rgba(156, 163, 175, 1);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+/* ---------------------------------------------- */
+.ReactModal__Overlay {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.ReactModal__Content {
+  display: flex;
+  position: relative !important;
+  justify-content: center;
+  width: 50%;
+  height: 25rem;
+}

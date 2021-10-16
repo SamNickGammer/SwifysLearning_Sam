@@ -1,0 +1,91 @@
+.page {
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background-color: black;
+}
+.page > div {
+  display: table-cell;
+  padding: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.signin > div,
+.signin form {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.signin > div button,
+.signin form button {
+  width: 100%;
+}
+.signin a.button,
+.signin button,
+.signin input[type='text'] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a.button,
+button {
+  border: 1px solid #555;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+  padding: 0.75rem 1rem;
+  position: relative;
+}
+
+a.button,
+a.button:link,
+a.button:visited,
+button {
+  background-color: black;
+  color: #ccc;
+}
+.signin hr {
+  border: 0;
+  border-top: 1px solid #444;
+  display: block;
+  margin: 1.5em auto 0;
+  overflow: visible;
+}
+
+.signin hr:before {
+  background-color: black;
+  color: #888;
+  content: 'or';
+  padding: 0 0.4rem;
+  position: relative;
+  top: -0.6rem;
+}
+
+label {
+  color: #666;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+.signin > div input[type],
+.signin form input[type] {
+  margin-bottom: 0.5rem;
+}
+
+input[type] {
+  background: black;
+  border: 1px solid #555;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
